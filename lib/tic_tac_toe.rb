@@ -1,4 +1,5 @@
 class TicTacToe
+<<<<<<< HEAD
   def initialize(board = nil)
     @board = board || Array.new(9, " ")
   end
@@ -28,7 +29,7 @@ WIN_COMBINATIONS = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4
   def valid_move?(index)
     index.between?(0,8) && !position_taken?(index)
   end
-  
+
   def turn
     puts "Please enter 1-9:"
     input = gets.strip
@@ -125,4 +126,10 @@ def play
     puts "Cat's Game!"
   end
 end
+=======
+  def initialixe(board=nil)
+    @board = board || array.new(9, " ")
+  end
+  
+>>>>>>> fa99450492111bb900d0300088f4bda6d63390b9
 end
